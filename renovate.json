@@ -27,7 +27,7 @@
     "automergeType": "pr",
     "automergeStrategy": "squash",
     "prHourlyLimit": 0,
-    "prConcurrentLimit": 5,
+    "prConcurrentLimit": 1,
     "prCreation": "immediate",
     "assigneesFromCodeOwners": true,
     "recreateWhen": "always",

@@ -1,0 +1,40 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base"
+    ],
+    "lockFileMaintenance": {
+        "enabled": true,
+        "automerge": true
+    },
+    "packageRules": [
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "automerge": true,
+            "platformAutomerge": true
+        }
+    ],
+    "postUpdateOptions": [
+        "gomodTidy",
+        "gomodUpdateImportPaths"
+    ],
+    "platform": "github",
+    "platformCommit": true,
+    "platformAutomerge": true,
+    "automergeType": "pr",
+    "automergeStrategy": "squash",
+    "prHourlyLimit": 0,
+    "prConcurrentLimit": 0,
+    "prCreation": "immediate",
+    "assigneesFromCodeOwners": true,
+    "recreateWhen": "always",
+    "timezone": "America/New_York",
+    "schedule": [
+        "after 10pm every weekday",
+        "before 5am every weekday",
+        "every weekend"
+    ]
+}

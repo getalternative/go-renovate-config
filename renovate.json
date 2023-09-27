@@ -12,7 +12,13 @@
             "matchUpdateTypes": [
                 "minor",
                 "patch",
-                "digest",
+                "digest"
+            ],
+            "automerge": true,
+            "platformAutomerge": true
+        },
+        {
+            "matchDepTypes": [
                 "action"
             ],
             "automerge": true,

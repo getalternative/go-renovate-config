@@ -17,6 +17,19 @@
             ],
             "automerge": true,
             "platformAutomerge": true
+        },
+        {
+            "groupName": "all non-major dependencies",
+            "groupSlug": "all-minor-patch",
+            "matchPackagePatterns": [
+                "*"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "automerge": true,
+            "platformAutomerge": true
         }
     ],
     "postUpdateOptions": [

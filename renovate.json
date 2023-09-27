@@ -12,7 +12,8 @@
             "matchUpdateTypes": [
                 "minor",
                 "patch",
-                "digest"
+                "digest",
+                "action"
             ],
             "automerge": true,
             "platformAutomerge": true
